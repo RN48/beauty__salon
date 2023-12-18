@@ -1,0 +1,574 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #F5F3EF;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #BB9CC0;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color: #BB9CC0;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navbar .buttons .signin:hover {
+  color: #BB9CC0;
+}
+
+.navbar .buttons .signup {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons .signup:hover {
+  background-color: #BB9CC0;
+  color: black;
+}
+
+.navbar .buttons .greeting {
+  margin-right: 10px; /* Adjust the margin as needed */
+  color: #BB9CC0; /* Set the text color to match your website's color scheme */
+  font-weight: 500;
+}
+
+.navbar .buttons .logout {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons .logout:hover {
+  background-color: #BB9CC0;
+  color: black; /* Change color on hover */
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section .hero {
+  max-width: 50%;
+  color: black;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero-section .img img {
+  width: 517px;
+}
+
+.hero-section .buttons {
+  margin-top: 40px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.buttons .join {
+  background-color: #BB9CC0;
+}
+
+.hero-section .buttons .learn {
+  border: 1px solid black;
+  border-radius: 0.375rem;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #BB9CC0;
+}
+
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #BB9CC0;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+}
+
+
+
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 95px;
+  }
+
+  /* Additional styles for login form */
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+  }
+  
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 8px; /* Adjusted margin */
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .formbold-form-input {
+    width: 100%;
+    padding: 10px 16px; /* Adjusted padding */
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+    margin-bottom: 16px; /* Adjusted margin */
+  }
+  
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 24px; /* Adjusted padding */
+    border: none;
+    font-weight: 600;
+    background-color: #BB9CC0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+
+  /* Additional styles for sign-up form */
+.formbold-form-wrapper.signup {
+    margin: 80px auto 0; /* Adjusted top margin */
+    max-width: 550px;
+    width: 100%;
+  }
+  
+  .formbold-form-label.signup {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 8px; /* Adjusted margin */
+  }
+  .formbold-form-label-2-signup{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .formbold-form-input.signup {
+    width: 100%;
+    padding: 10px 16px; /* Adjusted padding */
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+    margin-bottom: 16px; /* Adjusted margin */
+  }
+  
+  .formbold-btn.signup {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 24px; /* Adjusted padding */
+    border: none;
+    font-weight: 600;
+    background-color: #BB9CC0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+
+  /* Additional styles for Services page */
+/* Additional styles for Services page */
+body.services {
+  background-color: #F5F3EF; /* Set a background color for the services page */
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px;
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Adjust as needed */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.card-item {
+  border: 1px solid #BB9CC0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  flex: 1; /* Distribute available space equally */
+  margin: 10px; /* Adjusted margin */
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  font-size: 1.5rem;
+  color: #BB9CC0;
+}
+
+.card-body p {
+  color: black;
+}
+
+.card-body input[type="checkbox"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  appearance: none;
+  position: relative;
+}
+
+.card-body input[type="checkbox"]::before {
+  content: '';
+  font-size: 20px;
+  color: #BB9CC0;
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BB9CC0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 20px;
+  transition: 0.3s;
+}
+
+.card-body input[type="checkbox"]:checked::before {
+  content: '\2714';
+  color: #fff;
+  background-color: #BB9CC0;
+}
+
+.services-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 12px 24px; /* Adjusted padding */
+  border: none;
+  font-weight: 600;
+  background-color: #BB9CC0;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+
+  /* Additional styles for Appointment page */ 
+ .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 12px;
+  }
+ 
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #BB9CC0;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #BB9CC0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+
+.profile-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form-h2 {
+    color: #BB9CC0;
+    margin-bottom: 20px;
+}
+
+.profile-form-p {
+    margin-bottom: 10px;
+}
+
+.profile-form {
+    margin-top: 20px;
+}
+
+.profile-wrapper-lable {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profile-wrapper-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-btn{
+    background-color: #BB9CC0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    background-color: #8C6A9D;
+}
+
+/* Additional styles for Appointment Details page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+.appointment-details {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Additional styles for FAQ page */
+.faq-container {
+  max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+  background-color: white; /* Set the background color as needed */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 1.2rem;
+  color: #BB9CC0; /* Set the question text color to match your website's color scheme */
+  font-weight: 600;
+}
+
+.answer {
+  font-size: 1rem;
+  color: #6b7280; /* Set the answer text color to match your website's color scheme */
+}
+
+/* thankyou-style.css */
+.thank-you-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
